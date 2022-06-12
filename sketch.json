@@ -1,0 +1,146 @@
+{
+  "cpu": {
+    "fqbn": "arduino:avr:yun",
+    "name": "Arduino Yún",
+    "type": "serial"
+  },
+  "secrets": [
+    {
+      "name": "SECRET_WHINUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_WHINPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_SANKOFAUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_SANKOFAPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_KIPPPHILLYUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_KPPPHILLYPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_KIPPALBANYUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_KIPPALBANYPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_SSID",
+      "value": ""
+    },
+    {
+      "name": "SECRET_WIFIPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_UNCOMMONUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_UNCOMMONPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_KIPPNYCUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_KIPPNYCPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_KIPPBALTUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_KIPPBALTPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_GREATOAKSUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_GREATOAKSPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FORTEPREPUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FORTEPREPPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_NORTHWOODUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_NORTHWOODPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_GCCSUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_GCCSPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_HOPEACADEMYUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_HOPEACADEMYPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FREIREHSUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FREIREHSPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FREIREMSUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FREIREMSPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FREIRETECHUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FREIRETECHPW",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FREIREWILLUSR",
+      "value": ""
+    },
+    {
+      "name": "SECRET_FREIREWILLPW",
+      "value": ""
+    }
+  ],
+  "included_libs": []
+}
