@@ -18,6 +18,7 @@
 #define webcamTest "webcamtests.com" // Webcam test URL
 #define keyboardTest "keyboardchecker.com" //keyboard test URL
 #define audioTest "audiocheck.net/audiotests_stereo.php" //audio tester
+#define batteryTest "battery_test 5" //crosh tester
 
 // Adjust parameters here if running into issues with timing
 #define startDelay 35 // Time to wait until keystroak program begins after it is plugged in
@@ -317,6 +318,7 @@ void openTests() {
   wait(2);
   Keyboard.release(KEY_LEFT_CTRL);
   wait(2);
+  
   // open mictests.com
   Keyboard.print(micTest);
   wait(3);
@@ -335,6 +337,7 @@ void openTests() {
   wait(2);
   Keyboard.release(KEY_LEFT_CTRL);
   wait(2);
+  
   // open webcamtests.com
   Keyboard.print(webcamTest);
   wait(2);
@@ -350,13 +353,17 @@ void openTests() {
   wait(2);
   Keyboard.release(KEY_LEFT_CTRL);
   wait(2);
-  if (school != 0) {
-  // open audiotester
-  Keyboard.print(audioTest);
+  
+  // open keyboardchecker.com
+  Keyboard.print(keyboardTest);
   wait(2);
-  // open a new tab
   Keyboard.write(KEY_ENTER);
   wait(2);
+  
+  // If the school is one that gives us permissions open audio tester and battery tester right now it is set to uncommon
+  
+  if (school != 0) {
+  // open a new tab
   Keyboard.press(KEY_LEFT_CTRL);
   wait(2);
   Keyboard.write('t');
@@ -366,30 +373,31 @@ void openTests() {
   wait(2);
   Keyboard.release(KEY_LEFT_CTRL);
   wait(2);
-  //   // open battery tester............may need to put this at the end if switching tabs needs extra permissions
-  // Keyboard.print(audioTest);
-  // wait(2);
-  // // open a new tab
-  // Keyboard.write(KEY_ENTER);
-  // wait(2);
-  // Keyboard.press(KEY_LEFT_CTRL);
-  // wait(2);
-  // Keyboard.write('t');
-  // wait(2);
-  // // highlight the URL address bar
-  // Keyboard.write('l');
-  // wait(2);
-  // Keyboard.release(KEY_LEFT_CTRL);
-  // wait(2);
-  
-  }
-  // open keyboardchecker.com
-  Keyboard.print(keyboardTest);
+  // open audiotester
+  Keyboard.print(audioTest);
   wait(2);
   Keyboard.write(KEY_ENTER);
-  wait(20);
+  wait(2);
+  
+  // Open battery tester
+  Keyboard.press(KEY_LEFT_CTRL);
+  wait(2);
+  Keyboard.press(KEY_LEFT_ALT);
+  wait(2);
+  Keyboard.write('t');
+  wait(2);
+  Keyboard.release(KEY_LEFT_CTRL);
+  wait(2
+  // Start the battery tester
+  Keyboard.print(BatteryTest);
+  wait(2);
+  Keyboard.write(KEY_ENTER);
+  
+  }
+  
 }
 
+// needs more testing only sort of works
 void enrollment() {
   Keyboard.press(KEY_LEFT_CTRL);
   wait(2);
