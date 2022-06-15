@@ -387,7 +387,7 @@ void openTests() {
   Keyboard.write('t');
   wait(2);
   Keyboard.release(KEY_LEFT_CTRL);
-  wait(2
+  wait(2);
   // Start the battery tester
   Keyboard.print(BatteryTest);
   wait(2);
