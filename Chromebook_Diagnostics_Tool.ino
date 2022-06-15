@@ -389,7 +389,7 @@ void openTests() {
   Keyboard.release(KEY_LEFT_CTRL);
   wait(2);
   // Start the battery tester
-  Keyboard.print(BatteryTest);
+  Keyboard.print(batteryTest);
   wait(2);
   Keyboard.write(KEY_ENTER);
   
